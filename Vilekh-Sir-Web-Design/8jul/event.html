@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <title>Event Demo</title>
+    <script>
+        function showDate() {
+            var ref = document.getElementById("response");
+            //alert(ref);
+            ref.innerHTML = Date();
+        }
+        function showDate1() {
+            document.getElementById("btn").innerHTML = Date();
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="showDate()">Click me to show Date</button>
+    <br /><br />
+    <button ondblclick="showDate()">Click me to show Date</button>
+    <br /><br />
+    <button id="btn" onclick="showDate1()">Click me to show Date</button>
+    <br /><br />
+    <button onclick="this.innerHTML=Date()">Click me to show Date</button>
+    <br /><br />
+    <h1 id="response"></h1>
+</body>
+
+</html>

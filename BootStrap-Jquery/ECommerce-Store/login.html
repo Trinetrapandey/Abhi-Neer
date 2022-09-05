@@ -1,0 +1,226 @@
+<html lang="en">
+
+<head>
+
+    <title>Malakar cloth's shop</title>
+    <link rel="stylesheet" href="shop.css">
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="phone.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+    <script src="../../Vilekh-Sir-Web-Design/14jul/validate.js"></script>
+    <script>
+        function validation() {
+            var flag = true;
+
+            var name = document.getElementById("name").value;
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            var mobile = document.getElementById("mobile").value;
+            var city = document.getElementById("city").value;
+
+            var error1 = document.getElementById("error1").value;
+            var error2 = document.getElementById("error2").value;
+            var error3 = document.getElementById("error3").value;
+            var error4 = document.getElementById("error4").value;
+            var error6 = document.getElementById("error6").value;
+        }
+
+        if (name.length == 0) {
+            error1.innerHTML = "*Name is required";
+            error1.style.color = "red";
+            flag = false;
+        }
+        else
+            error1.innerHTML = "";
+
+        if (username.length == 0) {
+            error2.innerHTML = "*UserName is required";
+            error2.style.color = "red";
+            flag = false;
+        }
+        else
+            error2.innerHTML = "";
+
+
+        if (password == "") {
+            error3.innerHTML = "*Password is required";
+            error3.style.color = "red";
+            flag = false;
+        }
+        else
+            error3.innerHTML = "";
+
+        if (mobile.length == 0) {
+            error4.innerHTML = "*Mobile number is required";
+            error4.style.color = "red";
+            flag = false;
+        }
+        else if (isNaN(mobile)) {
+            error4.innerHTML = "*Mobilenumber must be numeric";
+            error4.style.color = "red";
+            flag = false;
+        }
+        else if (mobile.length != 10) {
+            error4.innerHTML = "*Mobilenumber must be 10 digit";
+            error4.style.color = "red";
+            flag = false;
+        }
+        else
+            error4.innerHTML = "";
+
+        if (city == 0) {
+            error6.innerHTML = "*City is required";
+            error6.style.color = "red";
+            flag = false;
+        }
+        else
+            error6.innerHTML = "";
+
+        return flag;
+    </script>
+    <style>
+        #from::before {
+            content: "";
+            position: absolute;
+            background: url('./images/login2.jpg') no-repeat center center/cover;
+            height: 642px;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.89;
+        }
+
+        #from h4 {
+            color: black;
+            text-align: center;
+            font-family: 'Bree Serif', serif;
+        }
+
+        input {
+            padding: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="https://cdn3.vectorstock.com/i/1000x1000/84/77/logo-for-clothing-store-vector-37718477.jpg"
+                alt="malakarclothshop.com">
+        </div>
+        <ul>
+            <li class="item"><a href="Pro.html" title="Home Page">Home</a></li>
+            <li class="item"><a href="service.html" title="Services page">Services</a></li>
+            <li class="item"><a href="client.html" title="Clients">Our Clients</a></li>
+            <li class="item"><a href="contact.html" title="Contact">Contact Us</a></li>
+            <li class="item"><a href="login.html" title="Contact">Login</a></li>
+        </ul>
+        <form class="form-inline  my-lg-0  " style="float: right; margin-left: 180px;">
+            <input class="form-control " type="search" placeholder="Search" aria-label="Search"
+                style="width: 180px;height: 30px;">
+            <button class="btn btn-outline-primary ml-5  my-5 my-md-5 text-light   " type="submit">Search</button>
+        </form>
+        </div>
+    </nav>
+
+    <div id="from">
+        <div class="box">
+            <center>
+                <form>
+                    <table>
+                        <tr>
+                            <td><label>Name</label></td>
+                            <td><input type="text" id="name" onkeyup="return validation()" placeholder="Enter Name" />
+                            </td>
+                            <td id="error1"></td>
+                        </tr>
+
+                        <tr>
+                            <td><label>Username</label></td>
+                            <td><input type="text" id="username" onkeyup="return validation() "
+                                    placeholder="Enter Username" /></td>
+                            <td id="error2"></td>
+                        </tr>
+
+                        <tr>
+                            <td><label>Password</label></td>
+                            <td><input type="password" id="password" onkeyup="return validation()"
+                                    placeholder="Enter Password" /></td>
+                            <td id="error3"></td>
+                        </tr>
+
+                        <tr>
+                            <td><label>Confirm Password</label></td>
+                            <td><input type="password" id="cpassword" onkeyup="return validation()"
+                                    placeholder="Re-Enter Password" /></td>
+                            <td id="error9"></td>
+                        </tr>
+
+                        <tr>
+                            <td><label>Mobile</label></td>
+                            <td><input type="text" id="mobile" onkeyup="return validation()"
+                                    placeholder="Enter Mobile No." /></td>
+                            <td id="error4"></td>
+                        </tr>
+
+                        <tr>
+                            <td><label>Address</label></td>
+                            <td><textarea rows="5" cols="29" id="address" onkeyup="return validation()"
+                                    placeholder="Describe about yourself"></textarea></td>
+                            <td id="error5"></td>
+                        </tr>
+
+                        <tr>
+                            <td><label>City</label></td>
+                            <td>
+                                <select style="width:100%;" id="city" onchange="return validation()">
+                                    <option value="0">Select City</option>
+                                    <option>Indore</option>
+                                    <option>Ujjain</option>
+                                    <option>Bhopal</option>
+                                </select>
+                            </td>
+                            <td id="error6"></td>
+                        </tr>
+
+                        <tr>
+                            <td><label>Gender</label></td>
+                            <td>
+                                Male <input type="radio" name="gender" id="male" value="male"
+                                    onchange="return validation()" />
+                                &nbsp;&nbsp;
+                                Female <input type="radio" name="gender" id="female" value="female"
+                                    onchange="return validation()" />
+                            </td>
+                            <td id="error7"></td>
+                        </tr>
+
+                        <tr>
+                            <td><label>Hobbies</label></td>
+                            <td>
+                                Football <input type="checkbox" id="h1" value="football"
+                                    onchange="return validation()" />
+                                &nbsp;&nbsp;
+                                Basketball <input type="checkbox" id="h2" value="basketball"
+                                    onchange="return validation()" />
+                                &nbsp;&nbsp;
+                                Volleyball <input type="checkbox" id="h3" value="volleyball"
+                                    onchange="return validation()" />
+                            </td>
+                            <td id="error8"></td>
+                        </tr>
+                    </table>
+                    <button class="btn btn-outline-primary  text-light   " type="submit">Register here</button>
+                </form>
+            </center>
+        </div>
+    </div>
+    <br /><br />
+    <footer style="margin-top: 266px;">
+        <div class="center">
+            Copyright &copy; www.MalakarShop.com. All rights reserved!
+        </div>
+    </footer>
+</body>
+
+</html>

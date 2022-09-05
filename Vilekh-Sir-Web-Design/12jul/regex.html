@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <title>Regular Expression</title>
+    <script type="text/javascript">
+        function checkstring(s) {
+            var pattern, msg;
+            //pattern=/\d/;
+            //pattern=/\D/;
+            //pattern=/^\d/;
+            //pattern=/^\d+$/;
+            //pattern=/^[0-5]+$/;
+            //pattern=/\s/;
+            //pattern=/\w/;
+            //pattern=/^\w+$/;
+            //pattern=/^\W+$/;
+            //pattern=/^[0-4 a-g H-N %]+$/;
+            var res = s.match(pattern);
+            if (res)
+                msg = "Valid string";
+            else
+                msg = "Invalid string";
+            document.getElementById("response").innerHTML = msg;
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Regular Expression Pattern Matching</h1>
+    <label>Enter string for pattern matching</label>
+    <input type="text" onkeyup="checkstring(this.value)" />
+    <br />
+    <h2 id="response"></h2>
+</body>
+
+</html>

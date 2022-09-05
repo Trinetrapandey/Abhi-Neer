@@ -1,0 +1,27 @@
+<html>
+
+<head>
+  <title>Datepicker</title>
+  <link rel="stylesheet" href="jquery-ui.css">
+  <script src="jquery-3.6.0.js"></script>
+  <script src="jquery-ui.js"></script>
+  <script>
+    $(function () {
+      $("#datepicker").datepicker({
+        changeYear: true,
+        yearRange: "-40:+40",
+        changeMonth: true,
+        dateFormat: "dd-mm-yy"
+      });
+    });
+  </script>
+</head>
+
+<body>
+
+  <p>Date: <input type="text" id="datepicker"></p>
+
+
+</body>
+
+</html

@@ -1,0 +1,63 @@
+<html>
+
+<head>
+    <title>Image Gallary</title>
+    <style>
+        #main {
+            height: 400px;
+            width: 600px;
+            border: 1px solid black;
+        }
+
+        #main_part1 {
+            height: 250px;
+        }
+
+        #main_part1 img {
+            border: 5px solid gray;
+        }
+
+        #main_part2 {
+            height: 150px;
+        }
+
+        #main_part2 img {
+            margin: 0 10px 0 10px;
+            border: 2px solid black;
+        }
+    </style>
+    <script>
+        function changeImage(s) {
+            document.getElementById("myimg").src = s;
+        }
+        function reset() {
+            window.location = "event3.html";
+        }
+    </script>
+</head>
+
+<body>
+    <center>
+        <h1>Image Gallary</h1>
+        <div id="main">
+            <div id="main_part1">
+                <br />
+                <img id="myimg" src="./images/mainimg.png" height="200" width="400" />
+            </div>
+            <hr />
+            <div id="main_part2">
+                <br />
+                <img onmouseleave="reset()" onmouseenter="changeImage(this.src)" src="./images/banner.jpeg" height="100"
+                    width="100" />
+                <img onmouseleav e="reset()" onmouseenter="changeImage(this.src)" src="./images/banner1.png"
+                    height="100" width="100" />
+                <img onmouseleave="reset()" onmouseenter="changeImage(this.src)" src="./images/banner.jpeg" height="100"
+                    width="100" />
+                <img onmouseleave="reset()" onmouseenter="changeImage(this.src)" src="./images/banner1.png" height="100"
+                    width="100" />
+            </div>
+        </div>
+    </center>
+</body>
+
+</html>

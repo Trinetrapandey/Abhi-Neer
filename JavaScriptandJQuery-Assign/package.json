@@ -1,0 +1,32 @@
+{
+  "type": "module",
+  "name": "abhi-neer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NirnjanPatel/Abhi-Neer-main.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NirnjanPatel/Abhi-Neer-main/issues"
+  },
+  "homepage": "https://github.com/NirnjanPatel/Abhi-Neer-main#readme",
+  "keywords": [],
+  "description": "",
+  "devDependencies": {
+    "@babel/core": "^7.18.10",
+    "@babel/node": "^7.18.10",
+    "@babel/plugin-proposal-export-namespace-from": "^7.18.9",
+    "@babel/preset-env": "^7.18.10",
+    "babel-plugin-add-module-exports": "^1.0.4",
+    "nodemon": "^2.0.19"
+  },
+  "dependencies": {
+    "babel-preset-env": "^1.7.0"
+  }
+}

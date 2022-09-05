@@ -1,0 +1,165 @@
+<html>
+
+<head>
+    <title>@Media Rule</title>
+    <style>
+        * {
+            margin: 0px;
+        }
+
+        #container {
+            height: 620px;
+            width: 100%;
+        }
+
+        #header {
+            height: 23%;
+            background-color: orange;
+        }
+
+        #nav {
+            height: 7%;
+            background-color: brown;
+        }
+
+        #nav ul {
+            list-style: none;
+        }
+
+        #nav ul li {
+            display: inline-block;
+            margin: 1% 2% 0 2%;
+            color: white;
+        }
+
+        #content {
+            height: 55%;
+        }
+
+        #footer {
+            height: 15%;
+            background-color: orange;
+        }
+
+        @media only screen and (max-width:760px) {
+            #container {
+                height: 620px;
+                width: 100%;
+            }
+
+            #header {
+                height: 23%;
+                background-color: orangered;
+            }
+
+            #nav {
+                height: 7%;
+                background-color: royalblue;
+            }
+
+            #nav ul {
+                list-style: none;
+            }
+
+            #nav ul li {
+                display: inline-block;
+                margin: 1% 2% 0 2%;
+                color: white;
+            }
+
+            #content {
+                height: 55%;
+            }
+
+            #footer {
+                height: 15%;
+                background-color: orangered;
+            }
+        }
+
+        @media only screen and (max-width:360px) {
+            * {
+                margin: 0px;
+            }
+
+            #container {
+                height: 1000px;
+                width: 100%;
+            }
+
+            #header {
+                height: 20%;
+                background-color: blue;
+            }
+
+            #nav {
+                height: 13%;
+                background-color: burlywood;
+            }
+
+            #nav ul {
+                list-style: none;
+            }
+
+            #nav ul li {
+                display: block;
+                margin: 1% 2% 0 2%;
+                color: white;
+            }
+
+            #content {
+                height: 55%;
+            }
+
+            #footer {
+                height: 12%;
+                background-color: blue;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="container">
+        <div id="header">
+            <center>
+                <h2>Header Section</h2>
+            </center>
+        </div>
+        <div id="nav">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+                <li>Service</li>
+                <li>Register</li>
+                <li>Login</li>
+            </ul>
+        </div>
+        <div id="content">
+            <center>
+                <h2>Content Section</h2>
+            </center>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam eius ab eos quasi voluptates delectus
+                id mollitia error, praesentium odio ducimus cupiditate. Fugiat iusto et nam id repellat rem nisi.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, ipsum nam. Perspiciatis, corporis
+                necessitatibus odit, temporibus quae sed architecto beatae dolor nostrum asperiores quod quisquam
+                obcaecati vel illo sapiente numquam!
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, quidem nisi excepturi, voluptatem
+                rerum magnam enim provident dicta aliquam tenetur ex. Eaque unde quae quas tempore est culpa obcaecati
+                modi?
+            </p>
+
+        </div>
+        <div id="footer">
+            <center>
+                <h2>Footer Section</h2>
+            </center>
+        </div>
+    </div>
+
+</body>
+
+</html>

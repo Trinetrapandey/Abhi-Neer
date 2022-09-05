@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>PMS</title>
+  <!-- to load favicon -->
+  <link href="./images/logo.png" rel="icon" />
+
+  <!-- to load external css -->
+  <link href="./css/style.css" rel="stylesheet" />
+
+  <!-- to load accordian -->
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script>
+    $(function () {
+      $("#accordion").accordion();
+    });
+  </script>
+
+  <style>
+    #accordion {
+      width: 500px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div id="container">
+    <div id="header">
+      <div id="header_part1">
+        <center>
+          <img src="./images/logo.png" height="100" width="150" />
+        </center>
+      </div>
+      <div id="header_part2">
+        <center>
+          <br />
+          <h1>Project Management System</h1>
+          <br />
+          <font>Online solution for projects....</font>
+        </center>
+      </div>
+    </div>
+    <div id="nav">
+      <ul>
+        <a href="index.html" title="Home Page">
+          <li>Home</li>
+        </a>
+        <a href="about.html" title="About Page">
+          <li>About</li>
+        </a>
+        <a href="contact.html" title="Contact Page">
+          <li>Contact</li>
+        </a>
+        <a href="service.html" title="Service Page">
+          <li>Service</li>
+        </a>
+        <a href="register.html" title="Register Page">
+          <li>Register</li>
+        </a>
+        <a href="login.html" title="Login Page">
+          <li>login</li>
+        </a>
+      </ul>
+    </div>
+
+
+    <div id="content" style="min-height:500px;">
+      <h1>Service Options</h1>
+      <div id="accordion">
+        <h3>Portfolio</h3>
+        <div>
+          <p>
+            Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+            ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+            amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+            odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+          </p>
+        </div>
+        <h3>Blog</h3>
+        <div>
+          <p>
+            Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+            purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+            velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+            suscipit faucibus urna.
+          </p>
+        </div>
+        <h3>Followus</h3>
+        <div>
+          <p>
+            Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+            Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+            ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+            lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+          </p>
+          <ul>
+            <li>List item one</li>
+            <li>List item two</li>
+            <li>List item three</li>
+          </ul>
+        </div>
+        <h3>Events</h3>
+        <div>
+          <p>
+            Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+            et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+            faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+            mauris vel est.
+          </p>
+          <p>
+            Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+            inceptos himenaeos.
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="footer">
+      <center>
+        <h1>All right reserved &copy;2022-2023</h1>
+        <h3>DesignBy : DesignBatch34</h3>
+      </center>
+    </div>
+  </div>
+
+</body>
+
+</html>

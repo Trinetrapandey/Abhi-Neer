@@ -1,0 +1,10 @@
+// Character is vowel or consonant
+// var char = 'c';
+// var char = 'a';
+var char = 'A';
+if (char == 'a' || char == 'e' || char == 'i' || char == 'o' || char == 'u' || char == 'A' || char == 'E' || char == 'I' || char == 'O' || char == 'U') {
+    console.log(char + " is vowel");
+}
+else {
+    console.log(char + " is consonant");
+}

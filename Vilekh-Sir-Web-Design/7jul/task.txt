@@ -1,0 +1,14 @@
+-> WAP to check entered 3-digit number is palindrome or 
+not
+
+-> WAP to check entered 3-digit number is armstrong or 
+not
+
+-> WAP to check greater number between 4-numbers
+
+-> WAP to print fabonacii series upto value limit 100000
+
+-> WAP to check entered n-digit number is palindrome or 
+not
+
+-> WAP to check entered n-digit number is armstrong or not

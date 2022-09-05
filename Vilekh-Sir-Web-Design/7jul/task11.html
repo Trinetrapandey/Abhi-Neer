@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <title>JS Demo</title>
+    <script>
+
+        var n = 153, sum_n = 0, d;
+        var l = n.toString().length;
+        var new_n = n;
+
+        while (n > 0) {
+            d = n % 10;
+            sum_n += (Math.pow(d, l));
+            n = parseInt(n / 10);
+        }
+
+        if (new_n == sum_n)
+            document.write("Number is armstrong");
+        else
+            document.write("Number is not armstrong");
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

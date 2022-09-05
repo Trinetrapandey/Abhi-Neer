@@ -1,0 +1,35 @@
+OOPS : ES6 it is class based object oreinted in nature , i.e it follows all oops features which includes 
+
+Features of OOP'S :-
+
+-> Encapsulation
+-> Abstraction
+-> Polymorphism
+-> Inheritance 
+
+Note : Apart from ES6 , ES5 was object based object oreinted & not implemented classes & was not capable to implement class based functionalities like (inheritance ......)
+
+--------------------------------------------------------------
+
+Encapsulation : It is an object oreinted feature which signify wrapping of data & functionality into a single unit is encapsulation , as it wrap application level data together hence also considered as feature of data binding.
+
+Note : In oops 'object' carries encapsulation
+
+--------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

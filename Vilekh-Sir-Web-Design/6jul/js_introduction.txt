@@ -1,0 +1,25 @@
+Javascript : It is client side script used to apply dynamic changes on web page , like event programming , validations , animation at application level
+
+                        or
+
+Javascript : It is client side script which is event based i.e JS will not work untill event will be performed on webpage 
+
+---------------------------------------------------------
+
+Type of Events :-
+
+-> Click based event : onclick , ondblclick
+
+-> Key based event : onkeyup , onkeydown , onkeypress
+
+-> Focus based events : onfocus , onblur
+
+-> Cursor based events : onmouseenter , onmouseleave , onmousein , onmouseout , onmousehover
+
+-> Page load event : onload
+
+-> State change event : onchange
+ 
+
+
+                         

@@ -1,0 +1,25 @@
+<html>
+
+<head>
+    <title>Confirmation Box</title>
+    <script type="text/javascript">
+        //WAP to check entered 3-digit number is armstrong or not
+        var n = parseInt(prompt("Enter a number to check armstrong"))
+        var d1, d2, d3, new_n;
+        d1 = n % 10;
+        d2 = parseInt(n / 10) % 10;
+        d3 = parseInt(n / 100);
+        new_n = Math.pow(d1, 3) + Math.pow(d2, 3) + Math.pow(d3, 3);
+
+        if (n == new_n)
+            document.write("<h1>Number is armstrong</h1>");
+        else
+            document.write("<h1>Number is not armstrong</h1>");
+
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

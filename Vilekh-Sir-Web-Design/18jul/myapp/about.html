@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>PMS</title>
+    <!-- to load favicon -->
+    <link href="./images/logo.png" rel="icon" />
+
+    <!-- to load external css -->
+    <link href="./css/style.css" rel="stylesheet" />
+
+    <!-- include jQuery library -->
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+    <!-- include Cycle plugin -->
+    <script type="text/javascript" src="./js/jquery.cycle.all.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.slideshow').cycle({
+                fx: 'turnDown',
+                delay: -4000
+            });
+        });
+    </script>
+
+
+    <style>
+        #about_content1 {
+            height: 100%;
+            width: 35%;
+            float: left;
+        }
+
+        #about_content2 {
+            height: 100%;
+            width: 65%;
+            float: right;
+        }
+
+        .slideshow {
+            height: 100%;
+            width: 100%;
+            margin: auto
+        }
+
+        .slideshow img {
+            padding: 15px;
+            border: 1px solid #ccc;
+            background-color: #eee;
+            width: 80%;
+            height: 90%;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="container">
+        <div id="header">
+            <div id="header_part1">
+                <center>
+                    <img src="./images/logo.png" height="100" width="150" />
+                </center>
+            </div>
+            <div id="header_part2">
+                <center>
+                    <br />
+                    <h1>Project Management System</h1>
+                    <br />
+                    <font>Online solution for projects....</font>
+                </center>
+            </div>
+        </div>
+        <div id="nav">
+            <ul>
+                <a href="index.html" title="Home Page">
+                    <li>Home</li>
+                </a>
+                <a href="about.html" title="About Page">
+                    <li>About</li>
+                </a>
+                <a href="contact.html" title="Contact Page">
+                    <li>Contact</li>
+                </a>
+                <a href="service.html" title="Service Page">
+                    <li>Service</li>
+                </a>
+                <a href="register.html" title="Register Page">
+                    <li>Register</li>
+                </a>
+                <a href="login.html" title="Login Page">
+                    <li>login</li>
+                </a>
+            </ul>
+        </div>
+        <div id="content">
+
+            <div id="about_content1">
+
+                <div class="slideshow">
+                    <img src="./images/slide1.jpeg" />
+                    <img src="./images/slide2.png" />
+                    <img src="./images/slide1.jpeg" />
+                    <img src="./images/slide2.png" />
+                </div>
+
+            </div>
+            <div id="about_content2">
+
+                <h1>About :-</h1>
+
+                <p style="text-align:justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sodales
+                    rhoncus neque, quis vulputate purus venenatis in. Integer et nunc eget magna tempus lacinia. Nulla
+                    lobortis erat in molestie ultrices. Nunc molestie tincidunt varius. Nullam ac libero et metus
+                    bibendum viverra. Cras ornare vestibulum elit, ut facilisis tortor dapibus blandit. Proin id tortor
+                    in libero vulputate tincidunt pharetra id dui.
+
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sodales rhoncus neque, quis
+                    vulputate purus venenatis in. Integer et nunc eget magna tempus lacinia. Nulla lobortis erat in
+                    molestie ultrices. Nunc molestie tincidunt varius. Nullam ac libero et metus bibendum viverra. Cras
+                    ornare vestibulum elit, ut facilisis tortor dapibus blandit. Proin id tortor in libero vulputate
+                    tincidunt pharetra id dui.
+
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sodales rhoncus neque, quis
+                    vulputate purus venenatis in. Integer et nunc eget magna tempus lacinia. Nulla lobortis erat in
+                    molestie ultrices. Nunc molestie tincidunt varius. Nullam ac libero et metus bibendum viverra. Cras
+                    ornare vestibulum elit, ut facilisis tortor dapibus blandit. Proin id tortor in libero vulputate
+                    tincidunt pharetra id dui. </p>
+
+            </div>
+
+        </div>
+        <div id="footer">
+            <center>
+                <h1>All right reserved &copy;2022-2023</h1>
+                <h3>DesignBy : DesignBatch34</h3>
+            </center>
+        </div>
+    </div>
+
+</body>
+
+</html>

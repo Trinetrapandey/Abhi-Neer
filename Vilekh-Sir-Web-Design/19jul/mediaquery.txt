@@ -1,0 +1,23 @@
+Responsive UI design :- To create multiple screen as well as mobile first layout , responsive ui development approach is used.
+
+Traditionally to implement above feature @media rule was used , which was overcome by Bootstrap approach    
+
+@media rule :- It is a css application for specific screen layout , depending on screen resolution diffrent-different properties are implemented as screen on resolution change detect matching of resolution with media rule properties will be changed  
+
+Note : As per screens multiple properties is to be deployed
+
+syntax :
+
+@media only|not screen and (max-width:value)
+{
+ css properties
+} 
+
+
+
+
+
+
+
+
+

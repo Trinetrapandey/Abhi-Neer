@@ -1,0 +1,86 @@
+<html>
+
+<head>
+    <title>Form Validations</title>
+    <!-- to link external JS -->
+    <script src="./validate.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <form>
+        <table>
+            <tr>
+                <td><label>Name</label></td>
+                <td><input type="text" id="name" onkeyup="return validation()" /></td>
+                <td id="error1"></td>
+            </tr>
+
+            <tr>
+                <td><label>Username</label></td>
+                <td><input type="text" id="username" onkeyup="return validation()" /></td>
+                <td id="error2"></td>
+            </tr>
+
+            <tr>
+                <td><label>Password</label></td>
+                <td><input type="password" id="password" onkeyup="return validation()" /></td>
+                <td id="error3"></td>
+            </tr>
+
+            <tr>
+                <td><label>Mobile</label></td>
+                <td><input type="text" id="mobile" onkeyup="return validation()" /></td>
+                <td id="error4"></td>
+            </tr>
+
+            <tr>
+                <td><label>Address</label></td>
+                <td><textarea rows="5" cols="29" id="address" onkeyup="return validation()"></textarea></td>
+                <td id="error5"></td>
+            </tr>
+
+            <tr>
+                <td><label>City</label></td>
+                <td>
+                    <select style="width:100%;" id="city" onchange="return validation()">
+                        <option value="0">Select City</option>
+                        <option>Indore</option>
+                        <option>Ujjain</option>
+                        <option>Bhopal</option>
+                    </select>
+                </td>
+                <td id="error6"></td>
+            </tr>
+
+            <tr>
+                <td><label>Gender</label></td>
+                <td>
+                    Male <input type="radio" name="gender" id="male" value="male" onchange="return validation()" />
+                    &nbsp;&nbsp;
+                    Female <input type="radio" name="gender" id="female" value="female"
+                        onchange="return validation()" />
+                </td>
+                <td id="error7"></td>
+            </tr>
+
+            <tr>
+                <td><label>Hobbies</label></td>
+                <td>
+                    Football <input type="checkbox" id="h1" value="football" onchange="return validation()" />
+                    &nbsp;&nbsp;
+                    Basketball <input type="checkbox" id="h2" value="basketball" onchange="return validation()" />
+                    &nbsp;&nbsp;
+                    Volleyball <input type="checkbox" id="h3" value="volleyball" onchange="return validation()" />
+                </td>
+                <td id="error8"></td>
+            </tr>
+
+            <tr>
+                <td><input onclick="return validation()" type="submit" value="Register" /></td>
+            </tr>
+
+        </table>
+    </form>
+</body>
+
+</html>

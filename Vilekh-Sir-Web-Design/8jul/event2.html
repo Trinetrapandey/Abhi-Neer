@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <title>Event Demo</title>
+    <script>
+        function zoomIn() {
+            var ref = document.getElementsByTagName("img");
+            //alert(ref[0]);
+            ref[0].height += 50;
+            ref[0].width += 50;
+        }
+        function zoomOut() {
+            var ref = document.getElementsByTagName("img");
+            if (ref[0].height > 200) {
+                ref[0].height -= 50;
+                ref[0].width -= 50;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="zoomIn()">ZoomIn</button>
+    <button onclick="zoomOut()">ZoomOut</button>
+    <br /><br />
+    <img src="./images/banner.jpeg" height="200" width="200" />
+</body>
+
+</html>
